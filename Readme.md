@@ -17,7 +17,7 @@ The implemented neural network model expects the train_X of shape *(no. of featu
 - **optimizer:** Type of optimizer to use. The options are 'gd', 'gd_with_momentum' and 'adam' for gradient descent, gradient descent with momentum and adam optimizer. By default, optimizer = 'gd'.
 - **beta1:** The parameter to use for weighted moving average in gradient descent with momentum optimizer. This is also used in adam optimizer for first moment estimates. By default, beta1 = 0.9.
 - **beta2:** The parameter to use for second moment estimates in adam optimizer. The default is 0.999.
-- **epsilon:** A small number which is used in adam optimizer to avoid division by zero. The default is $10^{-8}$.  
+- **epsilon:** A small number which is used in adam optimizer to avoid division by zero. The default is 10<sub>-8;</sub>.  
 ### 1.1 Convention   
 - **W:** Weights of the neural network.
 - **b:** Biases of the neural network units
