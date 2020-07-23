@@ -17,14 +17,14 @@ The implemented neural network model expects the train_X of shape *(no. of featu
 - **optimizer:** Type of optimizer to use. The options are 'gd', 'gd_with_momentum' and 'adam' for gradient descent, gradient descent with momentum and adam optimizer. By default, optimizer = 'gd'.
 - **beta1:** The parameter to use for weighted moving average in gradient descent with momentum optimizer. This is also used in adam optimizer for first moment estimates. By default, beta1 = 0.9.
 - **beta2:** The parameter to use for second moment estimates in adam optimizer. The default is 0.999.
-- **epsilon:** A small number which is used in adam optimizer to avoid division by zero. The default is 10<sup>-8;</sup>.  
+- **epsilon:** A small number which is used in adam optimizer to avoid division by zero. The default is 10<sup>-8</sup>.  
 ### 1.1 Convention   
 - **W:** Weights of the neural network.
 - **b:** Biases of the neural network units
 - **Shape of W:** (no. of units in current layer , no. of units/examples in the previous layer)
 - **Shape of b:** (no. of units in the current layer , 1)
 - **l:** Layer number. Input layer is numbered as zero. The first hidden layer is layer 1. The output layer is L.
-- **Z:** Output of units before applying the non-linearity. Z<sup>l;</sup> = W<sup>l;</sup>A<sup>l-1;</sup> + b<sup>l;</sup>$
+- **Z:** Output of units before applying the non-linearity. Z<sup>l</sup> = W<sup>l</sup>A<sup>l-1</sup> + b<sup>l</sup>
 - **A:** Output of the units after applying non-linearity (e.g. Relu).
 - **dA:** Derivative of cost w.r.t. A. The considered cost in this impelemtation is logistic loss.
 - **dZ:** Derivative of cost w.r.t. Z.
